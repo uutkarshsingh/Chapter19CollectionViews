@@ -19,6 +19,8 @@ namespace Chapter19CollectionViews
 			PropertyInfo propertyInfo = typeof(Keyboard).GetRuntimeProperty(localPicker.Items[localPicker.SelectedIndex]);
 
 			entry.Keyboard = (Keyboard)propertyInfo.GetValue(null);
+
+			localPicker.Title = "Utkarsh";
 		}
 	}
 }
